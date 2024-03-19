@@ -7,7 +7,13 @@
 
 body {
     box-sizing: border-box;
-    background-color: #F3F5FC;
+    background-color: #001524;
+    background-image: url("./wallpaper_04.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -16,26 +22,44 @@ main {
     justify-content: center;
 }
 
+.cabecalho {
+    height: 20px;
+}
+
+.btnHome {
+    /* width: 80px; */
+    width: 3.8%;
+    /* height: 48px; */
+    height: 1.4%;
+    /* margin: 40px 50px 40px 50px; */
+    margin: 1.9% 2.4% 1.9% 2.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .logo {
     width: 120px;
     height: 48px;
-    /* padding: 3%; */
-    padding: 40px;
 }
 .conteudo_entrada {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding-right: 80px;
+    /* padding-right: 80px; */
+    padding-right: 3.82%;
     /* padding-left: 17.8%; */
-    margin-left: 40px;
+    /* margin-left: 40px; */
+    margin-left: 1.91%;
 }
 
 .conteudo_entrada_texto {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    /* margin: 60px 0px 0px 50px; */
+    margin: 7.7% 0% 0% 5%;
 }
 
 .conteudo_entrada_texto_input {
@@ -43,49 +67,60 @@ main {
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;
-    background-color: #F3F5FC;
+    text-align: center;
+    background-color: #EEEEEE;
     box-shadow: 0 0 0 0;
     border: 0 none;
-    outline: 0;
-    /* height: auto; */
+    outline: 20px solid #EEEEEE;
+    outline: 20px solid #EEEEEE;
     resize: none;
-    width: 680px;
-    padding: 168px 0 0 0;
-    /* word-break: break-all; */
-    color: #0A3871;
+    /* width: 680px; */
+    width: 130%;
+    /* padding: 0 0 60px 0; */
+    padding: 0 0 11% 0;
+    color: #222831;
+    border-radius: 16px;
+    opacity: 70%;
+}
+
+
+
+.conteudo_entrada_texto_input::placeholder {
+    color: #222831;
 }
 
 .conteudo_entrada_texto_exclamacao {
     width: 16px;
     padding-right: 8px;
-}
-
-.conteudo_entrada_texto_input::placeholder {
-    color: #0A3871;
+    position: relative;
+    top: -3px;
+    padding-left: 10px;
 }
 
 .conteudo_entrada_texto_requisitos {
     display: flex;
     align-items: flex-end;
+    position: relative;
+    top: -15px;
 }
 
 .conteudo_entrada_texto_info_requisitos {
     /* padding-top: 635px; */
-    color: #495057;
+    color: #222831;
 }
 
 .botoes_entrada {
     display: flex;
     flex-direction: row;
-    /* padding: 2.1% 0% 9.5%; */
-    /* gap: 3%; */
-    padding: 16px 0 72px;
-    gap: 24px;
+    padding: 2.1% 0% 9.5%;
+    gap: 3%;
+    /* padding: 16px 0 72px; */
+    /* gap: 24px; */
 }
 
 .botoes_entrada_escuro {
-    background-color: #0A3871;
-    border: 1px solid #D8DFE8;
+    background-color: #222831;
+    border: 1px solid #31363F;
     border-radius: 24px;
     padding: 24px;
     gap: 8px;
@@ -108,8 +143,8 @@ main {
 }
 
 .botoes_entrada_claro {
-    background-color: #D8DFE8;
-    border: 1px solid #0A3871;
+    background-color: #76ABAE;
+    border: 1px solid #222831;
     border-radius: 24px;
     padding: 24px;
     gap: 8px;
@@ -119,7 +154,7 @@ main {
     display: flex;
     justify-content: center;
     line-height: 19.36px;
-    color: #0A3871;
+    color: #222831;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -127,19 +162,22 @@ main {
 }
 
 .conteudo_saida {
-    width: 400px;
+    /* width: 400px; */
+    width: 19%;
     height: 944px;
     display: flex;
     margin: 40px 40px 40px 0px;
+    margin: 40px 1.91% 1.91% 0%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: #76ABAE;
     border-radius: 32px;
 }
 
 .conteudo_saida_imgAguardandoConteudo {
     width: 336px;
+    width: 94%;
 }
 
 .conteudo_saida_vazio {
@@ -148,7 +186,7 @@ main {
     text-align: center;
     font-size: 24px;
     padding: 32px;
-    color: #343A40;
+    color: #222831;
 }
 
 .conteudo_saida_digiteUmTexto {
@@ -157,7 +195,7 @@ main {
     text-align: center;
     font-size: 16px;
     width: 336px;
-    color: #495057;
+    color: #222831;
 }
 
 .conteudo_saida_textocriptografado {
@@ -165,22 +203,24 @@ main {
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    color: #495057;
+    color: #222831;
     box-shadow: 0;
     border: 0 none;
     outline: 0;
     resize: none;
     margin: 32px;
-    width: 336px;
+    width: 131%;
     height: 781px;
     display: none;
+    background: transparent;
+    /* background-color: #76ABAE; */
 }
 
 .conteudo_saida_botoes {
-    background-color: #D8DFE8;
-    border: 1px solid #0A3871;
+    background-color: #222831;
+    border: 1px solid #31363F;
     border-radius: 24px;
-    margin: 32px;
+    margin: 6%;
     width: 66.2%;
     display: none;
 }
@@ -193,7 +233,7 @@ main {
     display: flex;
     justify-content: center;
     line-height: 19.36px;
-    color: #0A3871;
+    color: #FFFFFF;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     margin: 24px;
@@ -203,11 +243,14 @@ main {
 }
 
 .rodape {
+    height: 60px;
     display: flex;
     justify-content: center;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #343A40;
+    color: #FFFFFF;
+    align-items: center;
+    flex-direction: row;
 }
 
