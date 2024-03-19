@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de texto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+</head>
+
+<body>
+    
+    <header class="cabecalho"></header>
+
+    <main>
+        <a class="btnHome" href="">
+            <img class="logo" src="./assets/Logo.png" alt="Logo">
+        </a>
+
+        <section class="conteudo_entrada">
+            <div class="conteudo_entrada_texto">
+                
+                <textarea id="textoInput" class="conteudo_entrada_texto_input" name="" cols="30" rows="14" placeholder="Digite seu texto"></textarea>
+
+                <div class="conteudo_entrada_texto_requisitos">
+                    <img class="conteudo_entrada_texto_exclamacao" src="./assets/bi_exclamation-circle-fill.png" alt="icone exclamacao">
+
+                    <p class="conteudo_entrada_texto_info_requisitos">
+                        Apenas letras minúsculas e sem acento.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="botoes_entrada">
+                <div onclick="btnCriptografar()" id="botoes" class="botoes_entrada_escuro">
+                    <a class="botoes_entrada_criptografar">
+                        Criptografar
+                    </a>
+                </div>
+            
+                <div onclick="btnDescriptografar()" id="botoes" class="botoes_entrada_claro">
+                    <a  class="botoes_entrada_descriptografar">
+                        Descriptografar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo_saida">
+            <img id="imgSaida" class="conteudo_saida_imgAguardandoConteudo" src="./assets/High quality products 1 1.png" alt="imgAguardandoConteudo">
+            
+            <p id="nenhumaMsg" class="conteudo_saida_vazio">
+                Nenhuma mensagem encontrada
+            </p>
+            
+            <p id="digiteUmTexto" class="conteudo_saida_digiteUmTexto">
+                Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+
+                
+
+            <textarea id="conteudoSaidaTextoCriptografado" name="" class="conteudo_saida_textocriptografado" cols="30" rows="14"></textarea>
+            
+            <div onclick="copiarTexto()" id="conteudoSaidaBotoes" class="conteudo_saida_botoes">
+                <a id="conteudo_saida_botoes_copiar" class="conteudo_saida_botoes_copiar">
+                    Copiar
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        Desenvolvido por M. Viniicius - Projeto Alura
+    </footer>
+
+    <script src="./app.js" defer></script>
+</body>
+</html>
