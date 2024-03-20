@@ -1,3 +1,50 @@
-@media (max-width:){
+@media (max-width:  768px){
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
 
-}
+    .btnHome {
+        height: auto;
+        padding: 1%;
+    }
+
+    .conteudo_entrada {
+        padding: 1% 0 0 0;
+    }
+
+    .conteudo_entrada_texto_input {
+        height: 610px;
+    }
+    
+    .conteudo_entrada_texto_requisitos {
+        padding: 2% 0 0 0;
+    }
+
+    .botoes_entrada {
+        padding: 2% 0 0 0;
+    }
+
+    .conteudo_saida {
+        margin: 5% 0 5% 0;
+        width: 475px;
+        padding: 3%;
+    }
+
+    .conteudo_saida_imgAguardandoConteudo {
+        width: 70%;
+        padding: 10% 0 0 0;
+    }
+
+    .conteudo_saida_digiteUmTexto {
+        width: 60%;
+        padding: 0 0 10% 0;
+    }
+
+    .conteudo_saida_botoes {
+        position: relative;
+        top: -20px;
+    }
