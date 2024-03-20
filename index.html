@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codificador de texto</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <!-- <link rel="stylesheet" href="./styles/styles - Copia.css"> -->
+    <link rel="stylesheet" href="./styles/reponsive.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
 
     <main>
         <a class="btnHome" href="">
-            <img class="logo" src="./assets/Logo.png" alt="Logo">
+            <img class="logo" src="./assets/logo_branco.png" alt="Logo">
         </a>
 
         <section class="conteudo_entrada">
@@ -59,10 +59,10 @@
 
                 
 
-            <textarea id="conteudoSaidaTextoCriptografado" name="" class="conteudo_saida_textocriptografado" cols="30" rows="14"></textarea>
+            <textarea id="conteudoSaidaTextoCriptografado" name="" class="conteudo_saida_textocriptografado" cols="30" rows="14" style="display: none;"></textarea>
             
-            <div onclick="copiarTexto()" id="conteudoSaidaBotoes" class="conteudo_saida_botoes">
-                <a id="conteudo_saida_botoes_copiar" class="conteudo_saida_botoes_copiar">
+            <div onclick="copiarTexto()" id="conteudoSaidaBotoes" class="conteudo_saida_botoes" style="display: none;">
+                <a id="conteudo_saida_botoes_copiar" class="conteudo_saida_botoes_copiar" >
                     Copiar
                 </a>
             </div>
