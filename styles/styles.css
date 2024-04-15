@@ -103,6 +103,7 @@ main {
     flex-direction: row;
     gap: 24px;
     padding-top: 5%;
+    opacity: 0.5;
 }
 
 .botoes_entrada_escuro {
@@ -125,10 +126,6 @@ main {
     text-decoration: none;
 }
 
-#botoes {
-    cursor: pointer;
-}
-
 .botoes_entrada_claro {
     background-color: #76ABAE;
     border: 1px solid #222831;
@@ -137,6 +134,7 @@ main {
     gap: 8px;
     width: 50%;
 }
+ 
 .botoes_entrada_descriptografar {
     display: flex;
     justify-content: center;
