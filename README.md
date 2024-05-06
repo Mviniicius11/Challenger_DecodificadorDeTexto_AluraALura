@@ -5,8 +5,8 @@
 </div>
 
 <div align="center">
-<img src="https://github.com/Mviniicius11/challenger_DecodificadorDeTexto/assets/127998638/7eae8404-63cc-4be2-aee4-55804ac0ac60"/>
+<img src="https://github.com/Mviniicius11/challenger_DecodificadorDeTexto/assets/127998638/7eae8404-63cc-4be2-aee4-55804ac0ac60" width="500px" />
 
-<img src="https://github.com/Mviniicius11/challenger_DecodificadorDeTexto/assets/127998638/3cd6acba-5138-4cb0-942a-a6a16005bc83"/>
+<img src="https://github.com/Mviniicius11/challenger_DecodificadorDeTexto/assets/127998638/3cd6acba-5138-4cb0-942a-a6a16005bc83" />
 
 </div>
