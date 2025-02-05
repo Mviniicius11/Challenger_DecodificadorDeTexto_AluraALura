@@ -8,7 +8,6 @@
 body {
     box-sizing: border-box;
     background-color: #001524;
-    background-image: url("./wallpaper_04.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -19,7 +18,7 @@ main {
     flex-direction: row;
     justify-content: center;
     height: 100vh;
-    /* width: 100%; */
+    padding: 16px;
 }
 
 .cabecalho {
@@ -36,9 +35,9 @@ main {
 }
 
 .logo {
-    width: 120px;
-    height: 48px;
+    height: 78px;
 }
+
 .conteudo_entrada {
     display: flex;
     flex-direction: column;
@@ -59,25 +58,19 @@ main {
     font-size: 32px;
     line-height: 48px;
     text-align: center;
-    background-color: #EEEEEE;
     box-shadow: 0 0 0 0;
     border: 0 none;
     resize: none;
     outline: 0;
-    color: #222831;
     border-radius: 32px;
     opacity: 70%;
-    padding-top: 5px;
+    padding-top: 10px;
     width: 100%;
     height: 780px;
 }
 
 .conteudo_entrada_texto_input::-webkit-scrollbar {
     display: none;
-}
-
-.conteudo_entrada_texto_input::placeholder {
-    color: #222831;
 }
 
 .conteudo_entrada_texto_requisitos {
@@ -106,9 +99,7 @@ main {
     opacity: 0.5;
 }
 
-.botoes_entrada_escuro {
-    background-color: #222831;
-    border: 1px solid #31363F;
+.botoes_entrada_fundo_criptografar {
     border-radius: 24px;
     padding: 24px 0 24px 0;
     gap: 8px;
@@ -119,27 +110,23 @@ main {
     display: flex;
     justify-content: center;
     line-height: 19.36px;
-    color: #FFFFFF;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
 }
 
-.botoes_entrada_claro {
-    background-color: #76ABAE;
-    border: 1px solid #222831;
+.botoes_entrada_fundo_descriptografar {
     border-radius: 24px;
     padding: 24px 0 24px 0;
     gap: 8px;
     width: 50%;
 }
- 
+
 .botoes_entrada_descriptografar {
     display: flex;
     justify-content: center;
     line-height: 19.36px;
-    color: #222831;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -151,7 +138,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #76ABAE;
     border-radius: 32px;
     gap: 32px;
     width: 25%;
@@ -188,8 +174,6 @@ main {
     font-size: 24px;
     line-height: 36px;
     text-align: center;
-    background-color: #76ABAE;
-    color: #222831;
     box-shadow: 0;
     border: 0 none;
     outline: 0;
@@ -202,9 +186,8 @@ main {
 .conteudo_saida_textocriptografado::-webkit-scrollbar {
     display: none;
 }
+
 .conteudo_saida_botoes {
-    background-color: #222831;
-    border: 1px solid #31363F;
     border-radius: 24px;
     display: none;
     width: 80%;
@@ -218,7 +201,6 @@ main {
     display: flex;
     justify-content: center;
     line-height: 19.36px;
-    color: #FFFFFF;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     margin: 24px;
@@ -232,9 +214,149 @@ main {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #FFFFFF;
     align-items: center;
     flex-direction: row;
     height: 50px;
 }
 
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url(../assets/wallpaper_dark.jpg);
+    }
+
+    #logo {
+        content: url(../assets/Logo_claro.png);
+        color: white;
+    }
+
+    .conteudo_entrada_texto_input::placeholder {
+        color: #FFFFFF;
+        opacity: 50%;
+        padding-top: 100px;
+    }
+
+    .conteudo_entrada_texto_input {
+        background-color: #141F26;
+        color: #FFFFFF;
+    }
+
+    .conteudo_entrada_texto_info_requisitos {
+        font-weight: bold;
+    }
+
+    .botoes_entrada_fundo_criptografar {
+        background-color: #141F26;
+        border: 1px solid #31363F;
+        color: #FFFFFF;
+    }
+
+    .botoes_entrada_fundo_descriptografar {
+        background-color: #76ABAE;
+        border: 1px solid #141F26;
+    }
+
+    .conteudo_saida {
+        background-color: #141F26;
+        opacity: 95%;
+    }
+
+    .conteudo_saida_vazio {
+        color: #FFFFFF;
+    }
+
+    .conteudo_saida_digiteUmTexto {
+        color: #FFFFFF;
+    }
+
+    .conteudo_saida_textocriptografado {
+        color: #FFFFFF;
+        opacity: 70%;
+        background-color: #141F26;
+    }
+
+    .conteudo_saida_botoes {
+        background-color: #76ABAE;
+        border: 1px solid #31363F;
+    }
+
+    .conteudo_saida_botoes_copiar {
+        color: #141F26;
+    }
+
+    .rodape {
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+}
+
+/* light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-image: url(../assets/wallpaper_day_future.jpg);
+        position: relative;
+    }
+
+    #conteudo {
+        position: relative;
+    }
+    
+    #logo {
+        content: url(../assets/Logo_escuro.png);
+        position: relative;
+    }
+
+    .conteudo_entrada_texto_input::placeholder {
+        color: black;
+        opacity: 50%;
+        padding-top: 100px;
+    }
+
+    .conteudo_entrada_texto_input {
+        background-color: #EEEEEE;
+    }
+
+    .conteudo_entrada_texto_exclamacao {
+        content: url(../assets/exclamation_black.png);
+    }
+
+    .conteudo_entrada_texto_info_requisitos {
+        color: black;
+        font-weight: bold;
+    }
+
+    .botoes_entrada_fundo_criptografar {
+        background-color: #76ABAE;
+        border: 1px solid #222831;
+    }
+
+    .botoes_entrada_fundo_descriptografar {
+        background-color: #222831;
+        border: 1px solid #31363F;
+        color: #FFFFFF;
+    }
+
+    .conteudo_saida {
+        background-color: #76ABAE;
+        opacity: 95%;
+    }
+
+    .conteudo_saida_textocriptografado {
+        background-color: #76ABAE;
+        color: #222831;
+    }
+
+    .conteudo_saida_botoes {
+        background-color: #222831;
+        border: 1px solid #31363F;
+    }
+
+    .conteudo_saida_botoes_copiar {
+        color: #FFFFFF;
+    }
+
+    .rodape {
+        color: #001524;
+        font-weight: bold;
+    }
+}

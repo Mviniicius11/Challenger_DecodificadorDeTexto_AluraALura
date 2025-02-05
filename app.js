@@ -1,13 +1,3 @@
-
-// function ocultarClasses() {
-//     const elementosOcultarEntrada = ["digiteUmTexto", "nenhumaMsg", "imgSaida", "conteudoSaidaTextoCriptografado", "conteudoSaidaBotoes"];
-
-//     for (i = 0; i < elementosOcultarEntrada.length; i++) {
-//         var display = 
-
-//       }
-// }
-
 var textarea = document.getElementById('textoInput');
 var div = document.getElementById('botoes_entrada');
 
@@ -21,8 +11,8 @@ function ajustarOpacidade() {
     }
 }
 
+// switch display empty message
 function alterarCriptografiaDisplay() {
-    document.getElementById("digiteUmTexto").style.display = "none";
 
     document.getElementById("nenhumaMsg").style.display = "none";
 
@@ -34,6 +24,7 @@ function alterarCriptografiaDisplay() {
 
 }
 
+// functions criptgraphy and decryptography
 function criptografarTexto() {
     let resultado = document.getElementById("textoInput").value
 
@@ -62,20 +53,15 @@ function descriptografarTexto() {
 }
 
 function copiarTexto() {
-    // var textoCopiado = document.getElementById('conteudoSaidaTextoCriptografado');
-    // textoCopiado.select();
-
-    // document.execCommand('copy');
     let campoTexto = document.getElementById("conteudoSaidaTextoCriptografado").value;
 
     navigator.clipboard.writeText(campoTexto).then(() => {
-        // console.log(campoTexto)
     })
 }
 
 
 
-// Comandos*
+// buttons commands
 
 function btnCriptografar() {
 
@@ -100,5 +86,5 @@ function btnDescriptografar() {
     } else {
     }
 }
-
+// opacity buttons
 textarea.addEventListener('input', ajustarOpacidade);
